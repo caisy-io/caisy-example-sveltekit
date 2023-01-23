@@ -21,6 +21,7 @@
 		to your new<br />SvelteKit app
 	</h1>
 
+	<a href="/blog/my-first-article"> a link to our first blog page</a>
 	<h2>
 		try editing <strong>src/routes/+page.svelte</strong>
 	</h2>
