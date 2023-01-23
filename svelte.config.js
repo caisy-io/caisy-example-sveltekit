@@ -6,12 +6,8 @@ const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
-	compilerOptions: {
-		generate: 'ssr',
-	},
 	build: {
 		ssr: true,
-		dynamicImports: true,
 	},
 	kit: {
 		adapter: adapter()

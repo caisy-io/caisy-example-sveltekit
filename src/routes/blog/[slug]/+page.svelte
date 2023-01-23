@@ -1,10 +1,8 @@
-<script>
+<script lang="ts">
 	import { RichTextRenderer } from '@caisy/rich-text-svelte-renderer';
-	/**
-	 * @type {{ title: string; text: any; }}
-	 */
-	export let data;
-	console.log('data', data);
+
+	export let data: { title: string; text: any };
+	console.log(data, JSON.stringify(data));
 </script>
 
 <svelte:head>
