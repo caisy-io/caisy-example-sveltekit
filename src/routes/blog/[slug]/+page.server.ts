@@ -1,15 +1,16 @@
 import { gql, GraphQLClient } from 'graphql-request';
+import { CAISY_API_KEY, CAISY_PROJECT_ID } from '$env/static/private'
 
 export async function load({ params }: { params: { slug: string } }) {
 	const client = new GraphQLClient(
-		`https://cloud.caisy.io/api/v3/e/54026eaa-a8fc-49f9-ac37-ebe5148c4926/graphql`,
+		`https://cloud.caisy.io/api/v3/e/${CAISY_PROJECT_ID}/graphql`,
 		{
 			headers: {
-				'x-caisy-apikey': `Q1Bi5yudIr4HxQEtVt2fmalZRyndjuDW`
+				'x-caisy-apikey': CAISY_API_KEY
 			}
 		}
 	);
-	const data = await client.request(
+	const gqlResponse = await client.request(
 		gql`
 			query allBlogArticle($slug: String) {
 				allBlogArticle(where: { slug: { eq: $slug } }) {
@@ -29,5 +30,5 @@ export async function load({ params }: { params: { slug: string } }) {
 		{ slug: params.slug }
 	);
 
-	return data?.allBlogArticle?.edges?.[0]?.node;
+	return gqlResponse?.allBlogArticle?.edges?.[0]?.node;
 }

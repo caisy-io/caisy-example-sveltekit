@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import { RichTextRenderer } from '@caisy/rich-text-svelte-renderer';
 
 	export let data: { title: string; text: any };
@@ -17,4 +17,6 @@
 </section>
 
 <style>
-</style>
+</style> -->
+
+<h1>hello world</h1>
