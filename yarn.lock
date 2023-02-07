@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@caisy/rich-text-svelte-renderer@^0.1.15":
-  version "0.1.15"
-  resolved "https://registry.yarnpkg.com/@caisy/rich-text-svelte-renderer/-/rich-text-svelte-renderer-0.1.15.tgz#aea86f3ffc4a093d51e4b1a72550587ff78c5274"
-  integrity sha512-4j0CATlUhsNGwLz+KDKQ9BrDgP4mn2x5/wGqhFWFtecFyEJypKcXNqafy6KDx0i2SIWnR/nWt/gJuGDCEz9t1Q==
+"@caisy/rich-text-svelte-renderer@^0.1.18":
+  version "0.1.18"
+  resolved "https://registry.yarnpkg.com/@caisy/rich-text-svelte-renderer/-/rich-text-svelte-renderer-0.1.18.tgz#0f3b6a19ed1e7e80c5896771fdd2f4a916445236"
+  integrity sha512-Gn7/qDh7Z4PNUXF2rJn2dscg8VlA3AyUtlqZpI0L1tY544H4xVHmrXGSHpyPG2etP5xXhfTsZX/+KNzvu2DjmA==
 
 "@esbuild/android-arm64@0.16.17":
   version "0.16.17"
